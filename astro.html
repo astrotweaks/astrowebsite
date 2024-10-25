@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Tweaks - Optimize Your Gaming Performance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header sticky-header">
+        <div class="logo">
+            <h1>Astro Tweaks</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#shop" class="shop-scroll">Shop Now</a></li>
+                <li><a href="https://github.com/astrotweaks/AstroFreeV2" target="_blank">Free Version</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with video background and buttons -->
+    <section class="hero">
+        <video autoplay muted loop id="video-background">
+            <source src="video/galaxy.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Boost your PC gaming performance with just one click</h2>
+            <p>Optimize your gaming experience on Windows with the best custom tweaks.</p>
+            <!-- Shop Now Button -->
+            <a href="#shop" class="cta-btn shop-btn">Shop Now</a>
+            <!-- Not ready for Premium yet? Free version -->
+            <p class="free-option">Not ready to buy premium? <a href="https://github.com/astrotweaks/AstroFreeV2" class="free-link" target="_blank">Try the free version</a> instead!</p>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="features-section">
+        <h2>Features of Astro Tweaks</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>1. One-click Optimization</h3>
+                <p>Automatically adjusts all your system settings for optimal gaming performance.</p>
+            </div>
+            <div class="feature-item">
+                <h3>2. Enhanced GPU Tweaks</h3>
+                <p>Get the most out of your graphics card with custom GPU optimizations.</p>
+            </div>
+            <div class="feature-item">
+                <h3>3. Network Latency Reduction</h3>
+                <p>Reduce latency and enjoy smoother online gaming with advanced network tweaks.</p>
+            </div>
+            <div class="feature-item">
+                <h3>4. Free Regular Updates</h3>
+                <p>Receive regular updates with the latest tweaks for new games and system improvements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium and Free section -->
+    <section id="shop" class="shop-section">
+        <div class="premium-and-free">
+            <div class="premium">
+                <h2>Get Astro Tweaks Pro</h2>
+                <p>Purchase our premium version for even more powerful tweaks and features.</p>
+                <div class="purchase-box">
+                    <button class="button style3 fit" data-sellix-product="66989abeb8ebe" type="submit" alt="Buy Now">Buy Now</button>
+                    <span class="price">25.00 <span>USD</span></span>
+                </div>
+            </div>
+            <div class="free-invite">
+                <h3>Not ready to buy premium?</h3>
+                <p>Try our free version of Astro Tweaks and enjoy improved performance without any cost!</p>
+                <a href="https://github.com/astrotweaks/AstroFreeV2" class="cta-btn" target="_blank">Download Free Version</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with form -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us using the form below:</p>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Pop-up for message sent notification -->
+    <div id="popup" class="popup">
+        <p>Your message has been sent successfully!</p>
+        <button id="close-popup" class="close-btn">Close</button>
+    </div>
+
+    <!-- Integrating Sellix -->
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+
+    <footer>
+        <p>© 2024 Astro Tweaks. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
